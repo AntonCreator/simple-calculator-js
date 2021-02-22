@@ -1,0 +1,82 @@
+@font-face { 
+    font-family: 'calc'; 
+    src: url('./Calculator.ttf');  
+    font-weight: bold; 
+    font-style: normal; 
+  }
+
+input {
+    font-family: calc;
+    font-size : 46px;
+    font-weight:bolder;
+    display: block;
+    width: 98%;
+    height: 50px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin: auto 0 0 0;
+    background: yellowgreen;
+}
+
+.container {
+    width: 300px;
+    background-color: gray; 
+    padding : 10px; 
+    border-radius: 5px;
+}
+
+.btn-grid {
+   
+    background: rgb(219, 214, 214);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    grid-gap: 5px;
+    padding :8px;
+}
+
+button {
+    border-radius: 3px;
+    font-size: 20px;
+    background: rgb(143, 137, 137);
+    border: 6px outset rgb(204, 197, 197);
+   
+}
+
+button:hover {
+    background: rgb(235, 233, 233);
+}
+
+.cleanItem , .zero{
+    grid-column: 1/3;
+
+}
+
+.backItem {
+    grid-column: 3/-1
+}
+
+.equal {
+    grid-column: 4/4;
+    grid-row: 5/7;
+}
+
+p{
+    font-size: 15px;
+    color:whitesmoke;
+    
+}
+
+.casio {
+    font-size: 24px;
+    color:whitesmoke;
+    text-align: right;
+    margin-top:-8px ;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

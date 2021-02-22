@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+        <h1 class = "casio">Casio</h1>
+        <form name = "form">
+        <input name = "textview" type = "text" readonly>
+        </form>
+        <div class = "header"><p style = "font-size: 18px;">Simple calculator</p><p><em>made in China Ⓒ</em></p></div>
+        
+        <div class = "btn-grid">
+        <button style = "background-color: red; color : white"" onclick = "clean()" class = "cleanItem">C</button>
+        <button onclick = "back()" class = "backItem" >&larr;</button>
+        <button onclick = "insert('+')">+</button>
+        <button onclick = "insert('-')">-</button>
+        <button onclick = "insert('*')">&times;</button>
+        <button onclick = "insert('/')">&divide;</button>
+        <button onclick = "insert('7')">7</button>
+        <button onclick = "insert('8')">8</button>
+        <button onclick = "insert('9')">9</button>
+        <button onclick = "insert('(')">(</button> 
+        <button onclick = "insert('4')">4</button>
+        <button onclick = "insert('5')">5</button>
+        <button onclick = "insert('6')">6</button>
+        <button onclick = "insert(')')">)</button>
+        <button onclick = "insert('3')">3</button>
+        <button onclick = "insert('2')">2</button>
+        <button onclick = "insert('1')">1</button>
+        <button style = "background-color: rgb(52, 52, 52);color : white" onclick = "equal()" class = "equal" >=</button>
+        <button onclick = "insert('0')" class = "zero">0</button>
+        <button onclick = "insert('.')" >.</button>
+        </div>
+      
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
